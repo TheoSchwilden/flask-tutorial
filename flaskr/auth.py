@@ -70,7 +70,7 @@ def login():
 
 
 @bp.before_app_request
-def load_looged_in_ser():
+def load_logged_in_user():
     user_id = session.get('user_id')
     
     if user_id is None:
